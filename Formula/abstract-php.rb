@@ -287,7 +287,7 @@ INFO
       args << "--enable-maintainer-zts"
     end
 
-    if !build.include? 'without-pcntl'
+    unless build.include? 'without-pcntl'
       args << "--enable-pcntl"
     end
 
